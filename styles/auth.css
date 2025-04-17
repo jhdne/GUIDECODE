@@ -1,0 +1,76 @@
+.auth-container {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.auth-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.auth-submit {
+    background: #6c2bd9;
+    color: #ffffff;
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.auth-submit:hover {
+    background: #5a23b5;
+}
+
+.auth-switch {
+    text-align: center;
+    color: #a0aec0;
+}
+
+.auth-switch a {
+    color: #8347e5;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.auth-switch a:hover {
+    text-decoration: underline;
+}
+
+.verification-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.verification-button {
+    align-self: flex-end;
+    background: #4a5568;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+    margin-top: 1.75rem;
+}
+
+.verification-button:not(:disabled):hover {
+    background: #2d3748;
+}
+
+.verification-button:disabled {
+    background: #718096;
+    cursor: not-allowed;
+}

@@ -1,0 +1,24 @@
+.document-library {
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.doc-item {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.doc-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.doc-item button {
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.doc-item button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}

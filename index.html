@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generate professional product documentation with ease using our intuitive documentation generator tool.">
+    <meta name="keywords" content="documentation generator, product documentation, technical writing, software documentation">
+    <meta property="og:title" content="GUIDECODE - Product Documentation Generator">
+    <meta property="og:description" content="Generate professional product documentation with ease using our intuitive documentation generator tool.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GUIDECODE - Product Documentation Generator">
+    <meta name="twitter:description" content="Generate professional product documentation with ease using our intuitive documentation generator tool.">
+    <title>GUIDECODE - Product Documentation Generator</title>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
+    <link href="styles/theme.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/form.css" rel="stylesheet">
+    <link href="styles/preview.css" rel="stylesheet">
+    <link href="styles/auth.css" rel="stylesheet">
+    <link href="styles/home.css" rel="stylesheet">
+    <link href="styles/documentLibrary.css" rel="stylesheet">
+    <link href="styles/userProfile.css" rel="stylesheet">
+    <link href="styles/faq.css" rel="stylesheet">
+    <link href="styles/footer.css" rel="stylesheet">
+    <script>
+        // Initialize theme from localStorage or system preference
+        const theme = localStorage.getItem('theme') || 
+            (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+    </script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="utils/templates.js"></script>
+    <script type="text/babel" src="utils/documentGenerator.js"></script>
+    <script type="text/babel" src="utils/documentStorage.js"></script>
+    <script type="text/babel" src="utils/auth.js"></script>
+    <script type="text/babel" src="components/ThemeToggle.js"></script>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Navigation.js"></script>
+    <script type="text/babel" src="components/FormInput.js"></script>
+    <script type="text/babel" src="components/FormSelect.js"></script>
+    <script type="text/babel" src="components/FormTextarea.js"></script>
+    <script type="text/babel" src="components/DocumentForm.js"></script>
+    <script type="text/babel" src="components/DocumentPreview.js"></script>
+    <script type="text/babel" src="components/DocumentPreviewPage.js"></script>
+    <script type="text/babel" src="components/DownloadButtons.js"></script>
+    <script type="text/babel" src="components/DocumentLibrary.js"></script>
+    <script type="text/babel" src="components/AuthForm.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="components/FAQ.js"></script>
+    <script type="text/babel" src="components/Features.js"></script>
+    <script type="text/babel" src="components/CaseStudies.js"></script>
+    <script type="text/babel" src="components/UserProfile.js"></script>
+    <script type="text/babel" src="components/HomePage.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>

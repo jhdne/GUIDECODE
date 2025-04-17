@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Source Han Serif';
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap');
+}
+
+:root[data-theme="light"] {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f7fafc;
+    --text-primary: #1a202c;
+    --text-secondary: #4a5568;
+    --border-color: #e2e8f0;
+    --accent-color: #6c2bd9;
+    --accent-hover: #5a23b5;
+    --error-color: #e53e3e;
+    --success-color: #38a169;
+    --nav-bg: #f8fafc;
+    --card-bg: #ffffff;
+    --input-bg: #f8fafc;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --form-bg: #ffffff;
+    --button-text: #ffffff;
+    --hover-bg: #f7fafc;
+    --modal-bg: #ffffff;
+}
+
+:root[data-theme="dark"] {
+    --bg-primary: #0a0a1a;
+    --bg-secondary: #1a1a2a;
+    --text-primary: #ffffff;
+    --text-secondary: #a0aec0;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --accent-color: #6c2bd9;
+    --accent-hover: #8347e5;
+    --error-color: #fc8181;
+    --success-color: #48bb78;
+    --nav-bg: #0f0f1f;
+    --card-bg: #1a1a2a;
+    --input-bg: rgba(0, 0, 0, 0.2);
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --form-bg: #1a1a2a;
+    --button-text: #ffffff;
+    --hover-bg: #2d2d3d;
+    --modal-bg: #1a1a2a;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+:lang(zh) {
+    font-family: "Source Han Serif", serif;
+}
+
+:lang(en) {
+    font-family: "Times New Roman", serif;
+}
+
+/* Global theme styles */
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+}
+
+.form-input {
+    background-color: var(--input-bg);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+.button {
+    background-color: var(--accent-color);
+    color: var(--button-text);
+}
+
+.button:hover {
+    background-color: var(--accent-hover);
+}
+
+.modal {
+    background-color: var(--modal-bg);
+    border: 1px solid var(--border-color);
+}
+
+/* Navigation and header */
+.nav-link {
+    color: var(--text-secondary);
+}
+
+.nav-link:hover {
+    color: var(--text-primary);
+}
+
+/* Theme toggle */
+.theme-toggle {
+    padding: 0.5rem;
+    border-radius: 50%;
+    background: transparent;
+    color: var(--text-secondary);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.theme-toggle:hover {
+    background: var(--hover-bg);
+    color: var(--text-primary);
+}
+
+.theme-toggle i {
+    font-size: 1.2rem;
+}
